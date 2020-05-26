@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chatting_room_server</class>
+ <widget class="QWidget" name="chatting_room_server">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>chatting_room_server</string>
+  </property>
+  <widget class="QTextEdit" name="server_message">
+   <property name="geometry">
+    <rect>
+     <x>23</x>
+     <y>49</y>
+     <width>491</width>
+     <height>471</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="user_list">
+   <property name="geometry">
+    <rect>
+     <x>543</x>
+     <y>49</y>
+     <width>201</width>
+     <height>471</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

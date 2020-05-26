@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chatting_room_client_main</class>
+ <widget class="QWidget" name="chatting_room_client_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QTextEdit" name="MessageRec">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>611</width>
+     <height>331</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="MessageSend">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>374</y>
+     <width>611</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonSend">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>450</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>send(enter)</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="UserList">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>20</y>
+     <width>201</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ChooseUser">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>400</y>
+     <width>141</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ListLabel">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>0</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User List</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ChooseLabel">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>370</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>choose for private chat：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="IdChoose">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>400</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Id:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ChooseButton">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>430</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok(ctrl+enter)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LeaveButton">
+   <property name="geometry">
+    <rect>
+     <x>418</x>
+     <y>450</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>leave(ctrl+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="UserRefresh">
+   <property name="geometry">
+    <rect>
+     <x>708</x>
+     <y>340</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>refresh</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Emoji">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Emoji</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Picture">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Picture</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="File">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>340</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>File</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="BG">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>140</y>
+     <width>191</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="UserProfile">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>120</y>
+     <width>91</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User Proflie</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

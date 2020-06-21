@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "chatting_room_client_main.h"
+#include "../chatting_room_client/chatting_room_client_main.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_chatting_room_client_main_t {
-    QByteArrayData data[19];
-    char stringdata0[254];
+    QByteArrayData data[22];
+    char stringdata0[282];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -49,7 +49,10 @@ QT_MOC_LITERAL(14, 149, 18), // "on_Picture_clicked"
 QT_MOC_LITERAL(15, 168, 23), // "on_ChooseButton_clicked"
 QT_MOC_LITERAL(16, 192, 22), // "on_LeaveButton_clicked"
 QT_MOC_LITERAL(17, 215, 15), // "on_File_clicked"
-QT_MOC_LITERAL(18, 231, 22) // "on_UserRefresh_clicked"
+QT_MOC_LITERAL(18, 231, 22), // "on_UserRefresh_clicked"
+QT_MOC_LITERAL(19, 254, 19), // "on_EmojiSet_clicked"
+QT_MOC_LITERAL(20, 274, 3), // "Row"
+QT_MOC_LITERAL(21, 278, 3) // "Col"
 
     },
     "chatting_room_client_main\0PrivateShow\0"
@@ -58,7 +61,8 @@ QT_MOC_LITERAL(18, 231, 22) // "on_UserRefresh_clicked"
     "on_ButtonSend_clicked\0on_Emoji_clicked\0"
     "on_Picture_clicked\0on_ChooseButton_clicked\0"
     "on_LeaveButton_clicked\0on_File_clicked\0"
-    "on_UserRefresh_clicked"
+    "on_UserRefresh_clicked\0on_EmojiSet_clicked\0"
+    "Row\0Col"
 };
 #undef QT_MOC_LITERAL
 
@@ -68,7 +72,7 @@ static const uint qt_meta_data_chatting_room_client_main[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -76,19 +80,20 @@ static const uint qt_meta_data_chatting_room_client_main[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    2,   69,    2, 0x06 /* Public */,
+       1,    2,   74,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       5,    5,   74,    2, 0x0a /* Public */,
-       9,    1,   85,    2, 0x0a /* Public */,
-      11,    0,   88,    2, 0x0a /* Public */,
-      12,    0,   89,    2, 0x08 /* Private */,
-      13,    0,   90,    2, 0x08 /* Private */,
-      14,    0,   91,    2, 0x08 /* Private */,
-      15,    0,   92,    2, 0x08 /* Private */,
-      16,    0,   93,    2, 0x08 /* Private */,
-      17,    0,   94,    2, 0x08 /* Private */,
-      18,    0,   95,    2, 0x08 /* Private */,
+       5,    5,   79,    2, 0x0a /* Public */,
+       9,    1,   90,    2, 0x0a /* Public */,
+      11,    0,   93,    2, 0x0a /* Public */,
+      12,    0,   94,    2, 0x08 /* Private */,
+      13,    0,   95,    2, 0x08 /* Private */,
+      14,    0,   96,    2, 0x08 /* Private */,
+      15,    0,   97,    2, 0x08 /* Private */,
+      16,    0,   98,    2, 0x08 /* Private */,
+      17,    0,   99,    2, 0x08 /* Private */,
+      18,    0,  100,    2, 0x08 /* Private */,
+      19,    2,  101,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString, QMetaType::QString,    3,    4,
@@ -104,6 +109,7 @@ static const uint qt_meta_data_chatting_room_client_main[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int, QMetaType::Int,   20,   21,
 
        0        // eod
 };
@@ -125,6 +131,7 @@ void chatting_room_client_main::qt_static_metacall(QObject *_o, QMetaObject::Cal
         case 8: _t->on_LeaveButton_clicked(); break;
         case 9: _t->on_File_clicked(); break;
         case 10: _t->on_UserRefresh_clicked(); break;
+        case 11: _t->on_EmojiSet_clicked((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -168,13 +175,13 @@ int chatting_room_client_main::qt_metacall(QMetaObject::Call _c, int _id, void *
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }
